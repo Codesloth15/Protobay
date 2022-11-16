@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainMenu">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:background="@drawable/road">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:elevation="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15dp"
+                    android:fontFamily="@font/pxabay"
+                    android:text="protobay"
+                    android:textColor="#434343"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="180dp"
+            android:layout_marginEnd="64dp"
+            android:fontFamily="@font/oswoldre"
+            android:text="Beautiful stock photos and free images"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/intro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="280dp"
+            android:layout_marginEnd="64dp"
+            android:fontFamily="@font/oswoldre"
+            android:text="@string/stunning_free_images_and_royalty_free_stock"
+            android:textAlignment="center"
+            android:textColor="#E8E8E8"
+            android:textSize="19dp"
+            android:textStyle="normal" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_below="@id/intro"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="5dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <androidx.appcompat.widget.SearchView
+                    android:id="@+id/searchbar"
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:autofillHints="Search Here..."
+                    app:queryHint="Search Here..."
+                    tools:ignore="InvalidId" />
+                <Spinner
+                    android:id="@+id/category"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="25dp" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.appcompat.widget.SearchView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:autofillHints="Search Here..."
+            app:queryHint="Search Here..." />
+
+        <TextView
+            android:id="@+id/add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/navigation"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="@font/oswoldre"
+            android:text="Popular Images: nature, wallpaper, halloween, diwali,background, sky, christmas, cat, sky cloud,flowers, food,dog, iphone wallpaper"
+            android:textAlignment="center"
+            android:textColor="#D5D5D5"
+            android:textSize="16dp"
+            android:textStyle="normal" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/add"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:text="Free image by jplenio"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+</ScrollView>

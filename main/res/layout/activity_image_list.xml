@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    android:id="@+id/refresh"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent">
+<ScrollView
+    android:layout_width="match_parent"
+    android:background="#EDEDED"
+    android:layout_height="match_parent"
+    tools:context=".ImagePackage.ImageList">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical">
+
+                <TextView
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/pxabay"
+                    android:textColor="#434343"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15dp"
+                    android:text="protobay"/>
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/navigation"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="19dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="Select a animals image to download for free.High resolution picture downloads for your next project"
+            android:textColor="#090909"
+            android:textSize="15dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:background="#DFDCDC"
+            android:layout_below="@id/info"
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+
+</ScrollView>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
